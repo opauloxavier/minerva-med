@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Minerva Medicina Personalizada",
@@ -14,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <Analytics />
       <SpeedInsights />
       <body className={`antialiased`}>{children}</body>
     </html>

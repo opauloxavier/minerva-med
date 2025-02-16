@@ -4,13 +4,15 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-between min-h-screen bg-green-500/50">
-      <div className="flex-grow flex flex-col items-center justify-center">
-        <h1 className="text-3xl font-bold text-white">
+    <div className="flex flex-col items-center justify-between min-h-screen bg-green-500/50 p-4">
+      <div className="flex-grow flex flex-col items-center justify-center text-center">
+        <h1 className="text-2xl sm:text-3xl font-bold text-white">
           Minerva Medicina Personalizada
         </h1>
-        <h2 className="text-xl text-white">Medicina de Precisão</h2>
-        <p className="text-lg mt-16 text-white">Em breve</p>
+        <h2 className="text-lg sm:text-xl text-white mt-2">
+          Medicina de Precisão
+        </h2>
+        <p className="text-base sm:text-lg mt-4 text-white">Em breve</p>
       </div>
       <footer className="flex justify-center space-x-4 pb-4">
         <a

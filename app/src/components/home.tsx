@@ -2,16 +2,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-between min-h-screen p-4">
       <div className="flex-grow flex flex-col items-center justify-center text-center">
-        <img
+        <Image
           src="/logo-colorida-vertical.svg"
           alt="Minerva Logo"
-          width="500px"
-          height="500px"
+          width={500}
+          height={500}
           className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
         />
         <a

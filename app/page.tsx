@@ -5,7 +5,7 @@ import { Hero } from "./src/components/hero";
 import { QuemSomos } from "./src/components/quem-somos";
 import { WhatsappButton } from "./src/components/whatsapp-button";
 import { Produtos } from "./src/components/produtos";
-import { Servicos } from "./src/components/sevicos";
+import { Servicos } from "./src/components/servicos";
 import { Testemunhos } from "./src/components/testemunhos";
 import { Contato } from "./src/components/contato";
 import { Footer } from "./src/components/footer";

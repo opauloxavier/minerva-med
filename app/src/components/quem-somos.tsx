@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC } from "react";
 
 export const QuemSomos: FC = () => {
@@ -20,8 +21,10 @@ export const QuemSomos: FC = () => {
         {/* Image */}
         <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-end">
           {/* Replace with your real image */}
-          <img
-            src="/woman.jpg"
+          <Image
+            src="https://picsum.photos/200"
+            width={200}
+            height={200}
             alt="Profissional"
             className="w-64 h-auto rounded-full object-cover shadow-md"
           />

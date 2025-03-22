@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   FaInstagram,
@@ -13,9 +14,11 @@ export const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         {/* Logo Section */}
         <div className="flex justify-center items-center mb-8">
-          <img
+          <Image
             src="/logo-colorida-vertical.svg"
             alt="Minerva Medicina Personalizada"
+            width={200}
+            height={200}
             className="h-24 w-auto object-contain"
           />
         </div>

@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { CONTATOS } from "../constants/constants";
-// npm install react-icons
 
 export const WhatsappButton: FC = () => {
   return (

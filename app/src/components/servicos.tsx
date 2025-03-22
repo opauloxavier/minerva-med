@@ -4,7 +4,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 interface SlideItem {
   id: number;
@@ -16,21 +16,21 @@ interface SlideItem {
 const slidesData: SlideItem[] = [
   {
     id: 1,
-    image: "/images/service1.jpg",
+    image: "https://picsum.photos/200",
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur tempor sapien vitae aliquam.",
   },
   {
     id: 2,
-    image: "/images/service2.jpg",
+    image: "https://picsum.photos/200",
     title: "Pellentesque tempor quam ac est euismod",
     description:
       "Pellentesque tempor quam ac est euismod, et tincidunt dui lacinia. Vestibulum nec augue risus.",
   },
   {
     id: 3,
-    image: "/images/service3.jpg",
+    image: "https://picsum.photos/200",
     title: "Vestibulum nec augue risus",
     description:
       "Vestibulum nec augue risus, elementum non scelerisque sit amet, lobortis a turpis.",
@@ -84,9 +84,11 @@ export const Servicos: React.FC = () => {
               <div className="bg-white rounded-lg shadow p-4">
                 {/* Image + WhatsApp Icon */}
                 <div className="relative w-full h-48 overflow-hidden rounded-lg">
-                  <img
+                  <Image
                     src={slide.image}
                     alt={slide.title}
+                    width={50}
+                    height={50}
                     className="w-full h-full object-cover"
                   />
                 </div>

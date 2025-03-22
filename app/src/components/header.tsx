@@ -2,6 +2,7 @@
 
 import { FC, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 // Make sure you have installed @heroicons/react: `npm i @heroicons/react`
 
 export const Header: FC = () => {
@@ -15,9 +16,11 @@ export const Header: FC = () => {
         {/* Logo / Brand */}
         <div className="flex items-center space-x-2">
           {/* Replace with your actual logo image if you have one */}
-          <img
+          <Image
             src="/logo-colorida-vertical.svg"
             alt="Minerva Logo"
+            width={50}
+            height={50}
             className="h-10 w-auto object-contain"
           />
         </div>

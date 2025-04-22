@@ -16,7 +16,7 @@ export default function Home() {
           className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
         />
         <a
-          href="https://wa.me/5521985229564"
+          href="https://wa.me/5521978302348"
           target="_blank"
           className="mt-8 text-white py-2 px-4 rounded-full sm:text-xl md:text-2xl lg:text-3xl button-transition"
           aria-label="WhatsApp"

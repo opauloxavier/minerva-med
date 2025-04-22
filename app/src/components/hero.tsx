@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { CONTATOS } from "../constants/constants";
 
 export const Hero: FC = () => {
   return (
@@ -13,7 +14,7 @@ export const Hero: FC = () => {
           nec augue risus.
         </p>
         <a
-          href="#"
+          href={CONTATOS.LINK_WHATSAPP}
           className="inline-block bg-[#c3a07a] text-white font-medium py-3 px-6 rounded-full hover:bg-[#a98c68] transition-colors"
         >
           Agendar consulta

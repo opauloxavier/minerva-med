@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { CONTATOS } from "../constants/constants";
 
 export const Footer: React.FC = () => {
   return (
@@ -68,7 +69,7 @@ export const Footer: React.FC = () => {
             <p className="text-gray-300 mb-2 font-bold flex items-center">
               <FaMapMarkerAlt className="text-[#c3a07a] mr-4" size={14} />
               <a
-                href="https://www.google.com/maps?q=Rua+Comendador+Soares,+194+-+Sala+602,+Centro,+Nova+Iguaçu"
+                href={CONTATOS.LINK_ENDERECO}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#c3a07a]"
@@ -82,8 +83,11 @@ export const Footer: React.FC = () => {
             </p>
             <p className="text-gray-300 mb-6 flex items-center">
               <FaPhoneAlt className="text-[#c3a07a] mr-4" size={14} />
-              <a href="tel:+5521976274141" className="hover:text-[#c3a07a]">
-                (21) 97627-4141
+              <a
+                href={`tel:${CONTATOS.TELEFONE_COMPLETO}`}
+                className="hover:text-[#c3a07a]"
+              >
+                {CONTATOS.TELEFONE}
               </a>
             </p>
             <p className="text-gray-300 font-semibold">

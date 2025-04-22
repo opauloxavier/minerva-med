@@ -3,6 +3,7 @@
 
 import React from "react";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { CONTATOS } from "../constants/constants";
 
 export const Contato: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ export const Contato: React.FC = () => {
         {/* Social Icons */}
         <div className="flex space-x-4 mb-6">
           <a
-            href="https://instagram.com"
+            href={`${CONTATOS.INSTAGRAM}`}
             target="_blank"
             rel="noopener noreferrer"
             className=" text-[#1a1a1a] hover:text-[#c3a07a] transition-colors"

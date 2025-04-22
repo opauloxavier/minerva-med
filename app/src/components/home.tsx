@@ -3,6 +3,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import { CONTATOS } from "../constants/constants";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
         />
         <a
-          href="https://wa.me/5521985229564"
+          href={CONTATOS.LINK_WHATSAPP}
           target="_blank"
           className="mt-8 text-white py-2 px-4 rounded-full sm:text-xl md:text-2xl lg:text-3xl button-transition"
           aria-label="WhatsApp"
@@ -38,7 +39,7 @@ export default function Home() {
           />
         </a>
         <a
-          href="https://instagram.com/minervamedicina"
+          href={CONTATOS.INSTAGRAM}
           target="_blank"
           className="text-white"
           aria-label="Instagram"
